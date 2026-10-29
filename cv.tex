@@ -1,0 +1,137 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=27.89cm, paperwidth=21.56cm, left=1cm, right=1cm, top=0.8cm, bottom=0.8cm]
+{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{newunicodechar}
+\newunicodechar{₂}{$_2$}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+    pdftitle={Resume - TIMOTHEE GADRET}
+}
+
+\setlength\parindent{0pt}
+\renewcommand{\arraystretch}{1.08}
+
+\titleformat{\section}
+    {\Large\bfseries}
+    {}{0em}
+    {\uppercase}[\titlerule]
+
+\titlespacing*{\section}{0pt}{0.9ex}{2.3ex}
+
+\newcommand{\resumesection}[1]{\section{#1}\vspace{-0.6em}}
+\newcommand{\company}[2]{\noindent\textbf{\uppercase{#1}}\hfill \textbf{#2}}
+\newcommand{\role}[2]{\textit{\textbf{#1}}\hfill\textit{#2}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\textbf{TIMOTHEE GADRET}}\\[0.25em]
+    \normalsize Zurich, Switzerland $\vert$
+    \href{mailto:gadrettimothee@gmail.com}{gadrettimothee@gmail.com} $\vert$
+    +33 7 85 42 50 93 $\vert$
+    \href{https://linkedin.com/in/timothée-gadret-0282a8333}{linkedin.com/in/timothee-gadret}
+\end{center}
+
+\vspace{-1em}
+
+\resumesection{Education}
+\company{ETH Zürich}{Zürich, Switzerland}\\
+\role{Master of Science, Mechanical Engineering — Robotics Track}{Sep 2026 - Jun 2028}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Relevant Coursework: Probabilistic AI, Robot Dynamics, Model Predictive Control, Image Analysis and Computer Vision, Dynamic Programming and Optimal Control.
+\end{itemize}
+
+\company{EPFL (École Polytechnique Fédérale de Lausanne)}{Lausanne, Switzerland}\\
+\role{Bachelor of Science, Mechanical Engineering}{Sep 2023 - Jun 2026}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Relevant Coursework: Control Systems, Fluid Dynamics, Structural Analysis, Statistics, Linear Algebra.
+\end{itemize}
+
+\company{Technical University of Denmark (DTU)}{Lyngby, Denmark}\\
+\role{Exchange Program, Mechanical Engineering}{Sep 2025 - Jun 2026}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Relevant Coursework: Control Systems, Finite Element Method, Vibration Mechanics, Deep Learning.
+\end{itemize}
+
+\resumesection{Experience}
+
+\company{SCIC Environnement}{France}\\
+\role{Industrial Process \& Strategy Intern}{Jun 2026 – Aug 2026}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Led feasibility and cost-optimization studies for AdBlue production scale-up, presenting to leadership.
+    \item Designed and commissioned a new H₂S-treatment production line, including warehouse layout.
+\end{itemize}
+
+\company{Zephtech (Defense startup)}{Paris, France}\\
+\role{Control Systems Engineer (Founding engineer)}{Mar 2025 – Sep 2025}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Designed guidance and stabilization algorithms for smart munition systems using simulation-based validation.
+    \item Developed CAD components for sensor-actuator integration and mechanical assembly.
+\end{itemize}
+
+\company{Aether Swiss Kite}{Lausanne, Switzerland}\\
+\role{Simulation \& Control Engineer}{Jan 2024 – Sep 2025}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Developed aerodynamic and control models of kite wings for real-time simulation.
+    \item Integrated sensor feedback to improve stability and flight efficiency.
+\end{itemize}
+
+\company{Châteaux Laujac \& Corbin}{Médoc \& Saint-Émilion, France}\\
+\role{Vineyard and Winery Worker}{Jun 2022 – Jul 2022 \textbar{} Jul 2024 – Aug 2024 \textbar{} Sep 2026}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Supported oenologists across two Bordeaux Grand Cru estates in fermentation, quality control and cellar operations.
+    \item Took part in the 2024 grape harvest and vinification.
+\end{itemize}
+
+\resumesection{Technical Skills}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet},itemsep=0.15em]
+    \item \textbf{Mechanical Engineering:} Solid \& Fluid Mechanics, Thermodynamics, Structural Analysis, Control Systems
+    \item \textbf{Programming:} Python, C, MATLAB, Fortran
+    \item \textbf{CAD and Design:} SolidWorks, CATIA, Fusion 360
+    \item \textbf{Fabrication:} 3D Printing, CNC Machining, Prototyping
+    \item \textbf{Tools:} Git, VSCode, LaTeX
+\end{itemize}
+
+
+\resumesection{Relevant Projects}
+\company{Market Whisperer --- HackEurope 2026}{}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Top 3 at HackEurope 2026. Aggregated financial news, Polymarket and social data into an LLM pipeline estimating next-week market volatility.
+\end{itemize}
+
+\company{Bayesian PaiNN for Molecular Dynamics (academic)}{}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Extended a rotationally equivariant GNN (PaiNN) with Bayesian layers and MC dropout to predict molecular energies and forces on MD17, with uncertainty quantification.
+\end{itemize}
+
+\company{REGBOT Balance \& Motion Control (academic)}{}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet}]
+    \item Designed and implemented a full cascaded controller (wheel velocity, balance, velocity, position) on a self-balancing robot, validated in Simulink and on hardware.
+\end{itemize}
+
+
+\resumesection{Additional Information}
+\begin{itemize}[leftmargin=*,nosep,label={\scriptsize\textbullet},itemsep=0.15em]
+    \item \textbf{Languages:} French (Native), English (Fluent), Spanish (Advanced)
+    \item \textbf{Sports:} Rugby (11 yrs), Triathlon (Sables d’Olonne, France), Sailing (Spi Ouest France)
+    \item \textbf{Volunteering:} Volunteer Hospital Worker (Lourdes); street outreach in Paris; EPFL GM Coaching
+    \item \textbf{Scouting:} 8 years --- leadership, teamwork, outdoor \& service
+\end{itemize}
+
+\end{document}
